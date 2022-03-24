@@ -3,7 +3,7 @@ const github = require('@actions/github')
 
 try {
     const name = core.getInput('name')
-    core.setOutput('reponse', 'Hello à toi : '.concat(name))
+    core.setOutput('response', 'Hello à toi : '.concat(name))
 } catch (error) {
     core.setFailed(error.message)
 }       
