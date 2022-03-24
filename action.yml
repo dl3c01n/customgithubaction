@@ -1,0 +1,13 @@
+name: 'Custom Github Action'
+description: 'Send a message in a runner'
+inputs:
+  name:
+    description: 'La personne à dire bonjour'
+    required: true
+    default: 'David'
+outputs:
+  response:
+    description: "Réponse de l'action"
+runs:
+  using: 'node16'
+  main: 'index.js'
